@@ -21,17 +21,18 @@ public class HelloWorldTests {
 	}
 
 	@Test
-	public void shouldPrintTimeToConsole() {
-		HelloWorld.main(new String[] { });
+	public void shouldBeTwo() {
+		int a = 1+1;
+		system.out.println(a);
 
-		assertThat(output(), containsString("The current local time is"));
+		assertThat(output(), containsString("2"));
 	}
 
 	@Test
 	public void shouldPrintHelloWorldToConsole() {
 		HelloWorld.main(new String[] { });
 
-		assertThat(output(), containsString("Hello world!"));
+		assertThat(output(), containsString("oskour"));
 	}
 
 	private String output() {
