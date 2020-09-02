@@ -23,7 +23,7 @@ public class HelloWorldTests {
 	@Test
 	public void shouldBeTwo() {
 		int a = 1+1;
-		system.out.println(a);
+		System.out.println(a);
 
 		assertThat(output(), containsString("2"));
 	}
